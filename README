@@ -1,0 +1,52 @@
+-------------------------------- Syntax help -----------------------------------
+
+"this is note syntax qotes are not reqierd but help stand out."
+
+"block syntax looks like this"
+MASTERKEYWORD::arg1::arg2 KEYWORD1::arg1::arg2 KEYWORD2::arg1::arg2
+
+"vars use regex and can inharit other names"
+VAR::[names] IS::[is in regx] NOT::[not in regx]
+
+"with DIR '::' is turned into '/' so 'DIR::::' is '/'"
+DIR::[sub folder]
+
+"copys mached files or folders to the new location"
+COPY::[VAR] FROM::[dir] TO::[dir]
+
+"renames mached files or folders to the new name.ext1"
+RENAME::[VAR] FROM::[dir] TO::[name]::[ext1]
+
+"moves mached files or folders to the new location"
+MOVE::[vars] FROM::[dir] TO::[dir]
+
+"delete mached files or folders"
+DELETE::[vars] FROM::[dir]
+
+"run mached files with args"
+RUN::[vars] FROM::[dir] ARGS::[args]
+
+----------------------------- example config file ------------------------------
+
+VAR::image IS::.*\.png::.*\.gif::.*\.bmp::.*\.jpeg::.*\.jpg NOT::*\work\*
+VAR::video IS::.*\.flv::.*\.avi::.*\.mov::.*\.mp4::.*\.mpg::.*\.wmv
+VAR::music IS::.*\.wma::.*\.wav::.*\.ogg::.*\.mp3
+
+"text document formats"
+VAR::documents::text IS::.*\.rtf::.*\.doc::.*\.docx::.*\.odt::.*\.txt::.*\.pdf
+
+"spreadsheet document formats"
+VAR::documents::spreadsheet IS::.*\.csf::.*\.ods::.*\.xls::.*\.xlsx
+
+"presentation document formats"
+VAR::documents::presentation IS::.*\.ppt::.*\.pptx::.*\.odp
+
+"windows dir is"
+DIR::C:::Users::name
+"or in linux"
+DIR::::home::name
+
+MOVE::text::spreadsheet FROM::Desktop TO::work
+DELETE::image FROM::temp
+
+--------------------------------------------------------------------------------
