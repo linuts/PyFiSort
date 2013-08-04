@@ -1,18 +1,20 @@
-"""
-                    Copyright (C) 2013 Alexander B. Libby
+'''
+Copyright (C) 2013 Alexander B. Libby
 
-    This PyFiSort is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation version 3.
+PyFiSort is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation version 3.
 
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
+PyFiSort is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License License Version 3 for more details.
 
-    You should have received a copy of the GNU General Public License
-    along with this program.  If not, see <http://www.gnu.org/licenses/>.
-"""
+You should have received a copy of the GNU General Public License
+along with PyFiSort. If not, see <http://www.gnu.org/licenses/>.
+
+See project home page at: <https://github.com/linuts/PyFiSort>
+'''
 
 from shutil import copy2 as copyfile
 from shutil import copytree, rmtree
